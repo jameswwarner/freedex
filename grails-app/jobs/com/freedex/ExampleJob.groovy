@@ -2,7 +2,7 @@
 
 package com.freedex
 
-import scaffold.ExclusiveJob;
+import com.freedex.ExclusiveJob;
 
 /**
  * Example job.

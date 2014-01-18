@@ -264,23 +264,20 @@ app.facebook = {
             FB.ui(obj, app.facebook.sendDialogCallback);
         });
     },
-    shareTitle: 'Share this scaffold',
-    shareDescription: "It's a very good scaffold",
+    shareTitle: 'Share Freedex',
+    shareDescription: "Open Source Indexes",
     inviteFriends: function() {
         var url = $('#my-vanity-url').val();
         if (!url) {
-            url = 'https://www.scaffold.com'
+            url = 'https://www.freedex.com'
         }
         app.facebook.sendDialog(url, app.facebook.shareTitle,
                 app.facebook.shareDescription);
     },
     shareFriends: function() {
-        var url = $('#my-vanity-url').val();
-        if (!url) {
-            url = 'https://www.scaffold.com'
-        }
+        url = 'https://www.freedex.com'
         app.facebook.feedDialog(app.facebook.shareTitle, null, app.facebook.shareDescription,
-                url, 'http://assets.scaffold.com/og-img.png',
+                url, 'http://assets.freedex.com/og-img.png',
                 library.action.getBaseUri());
     },
     updatePage: function() {

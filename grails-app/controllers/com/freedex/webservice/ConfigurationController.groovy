@@ -2,12 +2,12 @@
 
 package com.freedex.webservice
 
-import scaffold.Configuration
+import com.freedex.Configuration
 import grails.converters.JSON
 
-import scaffold.RestUtil
-import scaffold.StringUtil
-import scaffold.WebserviceError
+import com.freedex.RestUtil
+import com.freedex.StringUtil
+import com.freedex.WebserviceError
 
 
 class ConfigurationController {

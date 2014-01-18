@@ -4,12 +4,12 @@ package com.freedex
 
 import org.springframework.context.ApplicationContext
 import org.springframework.context.ApplicationContextAware
-import scaffold.StringUtil
+import com.freedex.StringUtil
 
 
 class SystemService implements ApplicationContextAware {
 
-    def restPackageName = "scaffold.webservice"
+    def restPackageName = "com.freedex.webservice"
     ApplicationContext applicationContext
     def grailsApplication
 

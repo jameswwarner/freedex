@@ -2,8 +2,8 @@
 
 package com.freedex
 
-import com.freedex.Role;
-import com.freedex.User;
+import com.freedex.Role
+import com.freedex.User
 
 
 /**
@@ -127,7 +127,7 @@ class AuthService {
      * @return
      */
     def firstClickFree(String controllerName, String actionName, User user, def request) {
-        return !request.getHeader('referer')?.contains('scaffold.com')
+        return !request.getHeader('referer')?.contains('freedex.com')
     }
 
     /**

@@ -3,7 +3,7 @@
 package com.freedex.webservice
 
 import grails.converters.JSON
-import scaffold.EventLoggingService
+import com.freedex.EventLoggingService
 
 
 class EventLogController {

@@ -2,7 +2,7 @@
 
 package com.freedex.page
 
-import scaffold.Configuration;
+import com.freedex.Configuration;
 
 
 /**

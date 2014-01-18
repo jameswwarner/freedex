@@ -2,12 +2,12 @@
 
 package com.freedex.webservice
 
-import scaffold.Image
-import scaffold.User
-import scaffold.RequestUtil
-import scaffold.RestUtil
-import scaffold.StringUtil
-import scaffold.WebserviceError
+import com.freedex.Image
+import com.freedex.User
+import com.freedex.RequestUtil
+import com.freedex.RestUtil
+import com.freedex.StringUtil
+import com.freedex.WebserviceError
 
 import grails.converters.JSON
 import com.sun.tools.javac.util.Log;

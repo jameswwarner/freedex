@@ -3,7 +3,7 @@
 package com.freedex.admin
 
 
-import scaffold.StringUtil
+import com.freedex.StringUtil
 
 
 public class OpsHubController {

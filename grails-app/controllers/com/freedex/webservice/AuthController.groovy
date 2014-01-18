@@ -5,9 +5,9 @@ package com.freedex.webservice
 import grails.converters.JSON
 import groovy.time.*
 
-import scaffold.User
-import scaffold.StringUtil
-import scaffold.WebserviceError
+import com.freedex.User
+import com.freedex.StringUtil
+import com.freedex.WebserviceError
 
 
 /**

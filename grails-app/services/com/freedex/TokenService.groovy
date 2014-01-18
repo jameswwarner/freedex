@@ -2,7 +2,7 @@
 
 package com.freedex
 
-import scaffold.StringUtil;
+import com.freedex.StringUtil;
 
 import com.freedex.User;
 import com.freedex.UserToken;

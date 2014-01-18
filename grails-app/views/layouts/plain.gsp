@@ -3,7 +3,7 @@
 <g:render template="/includes/htmlTag" />
 <head>
     <g:render template="/includes/meta" />
-    <title>Scaffold</title>
+    <title>Freedex</title>
     <r:require module="site" />
     <link rel=icon       href="${resource(dir: 'images/key', file: 'bookmark.png')}">
     <link rel=stylesheet href="//fonts.googleapis.com/css?family=Lato:100,300,400,700,900">

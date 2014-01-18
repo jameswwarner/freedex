@@ -3,7 +3,7 @@
 <g:render template="/includes/htmlTag" />
 <head>
     <meta charset="utf-8">
-    <title>Scaffold &bull; <g:layoutTitle /></title>
+    <title>Freedex &bull; <g:layoutTitle /></title>
     <r:require module="admin" />
     <r:layoutResources />
     <link rel=icon             href="${resource(dir: 'images/key', file: 'bookmark.png')}" type="image/png">

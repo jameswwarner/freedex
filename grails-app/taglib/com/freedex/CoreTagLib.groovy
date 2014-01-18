@@ -2,8 +2,8 @@
 
 package com.freedex
 
-import com.freedex.Configuration;
-import com.freedex.User;
+import com.freedex.Configuration
+import com.freedex.User
 
 
 /**
