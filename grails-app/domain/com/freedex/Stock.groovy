@@ -15,9 +15,6 @@ class Stock {
     double pts
     double priceToBook
 
-    // from price download
-    double pricePerShare
-
     static constraints = {
         ticker unique: true
     }
