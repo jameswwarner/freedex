@@ -7,7 +7,7 @@
 <g:render template="/includes/subNav" />
 
 <h1>Team</h1>
- <g:img uri="/images/key/ppl/James.jpg" alt="JWW" />
+ <g:img uri="/images/key/ppl/James.jpg" alt="JWW" class="headshot" />
 <p>
 James W. Warner has over 10 years experience building large-scale
 systems at companies like Oracle and Amazon. He was the head of the
@@ -22,7 +22,9 @@ annually to the top undergraduate in the Mathematical Sciences
 department.
 </p>
 
- <g:img uri="/images/key/ppl/Daniel.jpg" alt="DLW" />
+<div class=person-sep></div>
+
+ <g:img uri="/images/key/ppl/Daniel.jpg" alt="DLW" class="headshot" />
 <p>
 Daniel L. Wang has over 10 years of experience implementing data
 crunching systems for the web and big science. He has worked on search
@@ -33,12 +35,14 @@ astronomers(the Qserv system for LSST). He received his PhD from UC
 Irvine, his MS from Stanford, and his BS from Duke.
 </p>
 
- <g:img uri="/images/key/ppl/Carolina.jpg" alt="CA" />
+<div class=person-sep></div>
+<br>
+ <g:img uri="/images/key/ppl/Carolina.jpg" alt="CA" class="headshot" />
 <p>
 Carolina Amiguet has been creating beautiful designs out of thin air
 for several years at several large, well-known companies in mobile
 services, telecommunications, software services, and fashion.
 </p>
-
+<div class=person-sep></div>
 </body>
 </html>
