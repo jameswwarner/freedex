@@ -6,8 +6,8 @@ package com.freedex
  *
  */
 class IndexSelect {
-    int limitStocks
-    int offsetStocks
+    Integer limitStocks
+    Integer offsetStocks
 
     static belongsTo = [indexDefinition : IndexDefinition]
 

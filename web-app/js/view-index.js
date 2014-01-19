@@ -22,8 +22,10 @@ app.viewIndex = {
             }
             $('#index-holdings').fadeIn();
         }
+        library.loading.off();
     },
     displayIndex: function(event) {
+        library.loading.on();
         var elem = $(event.target).closest('.available-index');
         var id = elem.data('id');
         if (id) {
