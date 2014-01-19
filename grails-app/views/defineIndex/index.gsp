@@ -59,10 +59,12 @@
                 Specify and offset and limit for the stocks you want to select.
             </div>
         </div>
-        <label>Limit
+        <label>
+            <span>Limit</span>
             <input type=text id=select-limit>
         </label>
-        <label>Offset
+        <label>
+            <span>Offset</span>
             <input type=text id=select-offset>
         </label>
     </div>

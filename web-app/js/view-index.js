@@ -8,16 +8,18 @@ if (!app)
 app.viewIndex = {
     handleViewIndex: function(data) {
         if (!data.error) {
+            console.log(data);
             var name = data.indexDefinition.name;
             $('#index-holdings .index-name').text(name);
             var destElem = $('#index-holdings tbody');
-            data.indexComponents.each(function() {
-                var component = $(this);
+            for (var i = 0; i < data.indexComponents.length; i++) {
+                var component = data.indexComponents[i];
+                var stock = component.stock;
                 var newRow = $("<tr><td>"+component.stock.ticker+"</td><td>"+
                         component.stock.name+"</td><td>"+
                         (component.weight * 100).toFixed(2)+"%</td></tr>");
                 newRow.appendTo(destElem);
-            });
+            }
             $('#index-holdings').fadeIn();
         }
     },

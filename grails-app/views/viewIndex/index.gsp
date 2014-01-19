@@ -23,7 +23,9 @@
 <div class=hide-me id=index-holdings>
     <h2>Index Holdings: <span class=index-name><%-- name put here by JS --%></span></h2>
     <table>
-        <tr><th>Ticker</th><th>Name</th><th>Weight in index</th></tr>
+        <thead>
+            <tr><td>Ticker</td><td>Name</td><td>Weight in index</td></tr>
+        </thead>
         <tbody>
             <%-- rows shoved here by js --%>
         </tbody>
