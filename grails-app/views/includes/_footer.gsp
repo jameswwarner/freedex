@@ -1,8 +1,7 @@
 <%-- Copyright (c) 2013-2014 James W. Warner, All Rights Reserved --%>
 <div id=section-footer class=float-endgame>
-    <div id=footer-left>&copy; 2013-2014 Scaffold</div>
+    <div id=footer-left>&copy; 2013-2014 Freedex</div>
     <div id=footer-middle>
-        <g:ifEnabled>
         <ul class=nav-bar-light>
             <li><g:link controller="page" action="about">About</g:link></li>
             <li><g:link controller="page" action="contact">Contact</g:link></li>
@@ -14,7 +13,6 @@
             <%-- li><g:link controller="page" action="jobs">Jobs</g:link></li --%>
             <%-- li><g:link controller="page" action="investors">Investors</g:link></li --%>
         </ul>
-        </g:ifEnabled>&nbsp;
     </div>
     <div id=footer-right>San Francisco</div>
 </div>

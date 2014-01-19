@@ -4,7 +4,7 @@
     <div id=subnav-bar>
         <div id=header-search>
             <g:img class="search-action" uri="/images/key/theme1/icon-search.png" alt="Search" />
-            <input class="search-query no-auto-focus" type=text placeholder="Search products">
+            <input class="search-query no-auto-focus" type=text placeholder="Search">
         </div>
 
         <g:if test="${pageName == 'example'}">
