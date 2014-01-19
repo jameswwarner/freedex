@@ -31,7 +31,7 @@ class IndexDefinitionController {
      */
     def create() {
         def name = params.name
-        def user = User.get(session.userId)
+        def user = null //User.get(session.userId)
         def definition = new IndexDefinition(name: name, user: user)
         definition.save()
         render definition as JSON

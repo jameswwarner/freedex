@@ -11,7 +11,24 @@
 
 <g:render template="/includes/subNav" model="[pageName:'viewIndex']" />
 
-<p>Here we'll show you some indexes you can view</p>
+<h1>View Indexes</h1>
+
+<h2>Available Indexes</h2>
+<ul class=available-indexes>
+    <g:each var="index" in="${com.freedex.IndexDefinition.list()}">
+        <li class=available-index data-id=${index.id}><span>${index.name}</span></li>
+    </g:each>
+</ul>
+
+<div class=hide-me id=index-holdings>
+    <h2>Index Holdings: <span class=index-name><%-- name put here by JS --%></span></h2>
+    <table>
+        <tr><th>Ticker</th><th>Name</th><th>Weight in index</th></tr>
+        <tbody>
+            <%-- rows shoved here by js --%>
+        </tbody>
+    </table>
+</div>
 
 </body>
 </html>

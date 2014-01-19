@@ -73,6 +73,7 @@ app.defineIndex = {
     createIndex: function() {
         var name = $('#index-name').val();
         if (name) {
+            console.log("Creating index definition...")
             library.action.call('index-definition', { action: 'create',
                 params: {name: name}, callback: app.defineIndex.handleCreateIndex });
         }

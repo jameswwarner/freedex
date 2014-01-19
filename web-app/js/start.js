@@ -16,6 +16,7 @@ $(function() {
     app.userSecurity.setup();
     app.gateway.setup();
     app.defineIndex.setup();
+    app.viewIndex.setup();
     app.login.setup();
     app.facebook.setup();
     app.testMode.setup();

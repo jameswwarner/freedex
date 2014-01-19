@@ -20,5 +20,7 @@ class IndexDefinition {
 
     static constraints = {
         user nullable: true
+        indexSelect nullable: true
+        indexWeight nullable: true
     }
 }

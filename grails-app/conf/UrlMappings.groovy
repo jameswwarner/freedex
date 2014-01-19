@@ -4,7 +4,7 @@ class UrlMappings {
         def maintenanceMode = false
         final controllers = [
             page: ["page", "define-index", "view-index"],
-            rest: ["configuration", "event-log", "index-definition",
+            rest: ["configuration", "event-log", "index-definition", "index-snapshot",
                 "image", "auth", "index-filter", "index-select", "index-sort", "index-weight"],
             admin: ["data-hub", "mktg-hub", "ops-hub"]
         ]

@@ -546,7 +546,7 @@ textarea {
     min-height: 550px;
     margin: 0 auto 80px auto;
     h1 {
-        .Font18;
+        .Font22;
         .FontCaps;
         font-weight: 400;
         text-align: center;
@@ -1074,6 +1074,28 @@ textarea {
         padding-top: 50px;
         font-weight: bold;
         text-align: center;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------
+    PAGE VIEW INDEX 
+--------------------------------------------------------------------------------------------------------------------- */
+#page-view-index {
+    h2 {
+        .Font18;
+    }
+    ul {
+        li {
+            cursor: pointer;
+            .Font14;
+            color: @chartColor;
+            span {
+                border-bottom: 1px dotted @chartColor;
+                &:hover {
+                    border-bottom: 1px solid @chartColor !important;
+                }
+            }
+        }
     }
 }
 
