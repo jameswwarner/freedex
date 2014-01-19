@@ -49,8 +49,8 @@ class QuoteImporter:
                            ('volume', 6, lambda f:f)]
         self.stockIdx = None
         self.template = "INSERT INTO %s (%s) VALUES %s;"
-        self.columnStr = "(%s)" % (",".join(map(lambda t: "`%s`" % t[0], 
-                                                self.columnList)))
+        self.columnStr = ",".join(map(lambda t: "`%s`" % t[0], 
+                                      self.columnList))
         self.dbName = "freedex"
         self.quoteTableName = "stock_quote"
         self.conn = None
@@ -80,6 +80,7 @@ class QuoteImporter:
                     fields.append(f(rFields[i]))
                 pass
             yield fields
+
     def pushRows(self, batch):
         if not (self.conn and self.cur):
             self.conn = db.connect(db=self.dbName, 
@@ -87,9 +88,11 @@ class QuoteImporter:
             self.cur = self.conn.cursor()
         q = self.template % (self.quoteTableName, self.columnStr, 
                              ",".join(batch))
-        print "executing q"
+        #print "executing q", q
         self.cur.execute(q)
         self.cur.fetchall() # ignore result
+        self.conn.commit()
+        self.cur = self.conn.cursor()
 
     def importFields(self, fName):
         batchSize = 100
@@ -100,7 +103,8 @@ class QuoteImporter:
             buf.append(val)
             if len(buf) >= batchSize:
                 self.pushRows(buf)
-                batch = []
+                buf = []
+                #break
         if buf:
             self.pushRows(buf)
 ########################################################################
