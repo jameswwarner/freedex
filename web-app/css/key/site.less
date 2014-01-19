@@ -1205,91 +1205,12 @@ textarea {
 @aboutIntroBoxW: 500px;
 #page-about {
     h1 {
-        border: 0;
-    }
-    .about-header {
-        .Font16;
-        .FontCaps;
-        font-weight: 800;
-    }
-
-    .about-intro {
-        position: relative;
         margin-bottom: 30px;
-        .intro-box {
-            position: absolute;
-            top: 70px;
-            left: 50%;
-            margin-left: -@aboutIntroBoxW / 2;
-            width: @aboutIntroBoxW;
-            line-height: 1.5em;
-            .Font18;
-            letter-spacing: 1px;
-            font-weight: 300;
-            color: whitesmoke;
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 30px 40px;
-            .box-header {
-                .Font22;
-                .FontCaps;
-                letter-spacing: 4px;
-                font-weight: 600;
-                color: white;
-                margin-bottom: @gapSM;
-            }
-        }
-        img {
-            width: 100%;
-            border-top: 1px solid silver;
-            border-bottom: 2px solid black;
-        }
     }
-
-    .about-body {
-        .FloatEndgame();
-        margin-bottom: 30px;
-        .body-description {
-            float: left;
-            width: 50%;
-            padding-right: 40px;
-        }
-        .body-steps {
-            float: right;
-            width: 50%;
-            padding-left: 30px;
-            .step {
-                background-color: whitesmoke;
-                padding: @gapXS @gapLG;
-                margin-bottom: @gapSM;
-                div {
-                    display: inline-block;
-                    vertical-align: middle;
-                    .Font16;
-                    margin-right: @gapMD;
-                    &:first-child {
-                        .Font32;
-                        .FontCursive;
-                        font-weight: 600;
-                    }
-                }
-                .icon {
-                    .ImageCenterpiece(50px; 50px; @gapSM);
-                    background-color: white;
-                    border-radius: 8px;
-                }
-            }
-        }
-    }
-
-    .about-footer {
-        border-top: 2px solid silver;
-        padding-top: 30px;
-        .about-header {
-            margin-bottom: @gapMD;
-        }
-        img {
-            width: 100%;
-        }
+    .about-img {
+        float: left;
+        width: 200px;
+        margin-right: 30px;
     }
 }
 
