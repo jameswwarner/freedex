@@ -13,6 +13,10 @@
 
 <h1>Define an index</h1>
 
+<label class=name-area>Index Name:
+    <input type=text id=index-name>
+</label>
+
 <div class=define-step id=filter-step>
     <div class=step-num><span>1</span></div>
     <div class=step-input>
@@ -22,10 +26,10 @@
                 Please give information about what stocks you would like to exclude from your universe.
             </div>
         </div>
-        <div class=filter-row>
+        <div class="filter-row step-row">
             <g:render template="/includes/fieldSelect" />
             <g:render template="/includes/operationSelect" />
-            <input type=text name=row-value>
+            <input type=text class=row-value name=filter-value>
             <span class=add-row>+</span>
         </div>
     </div>
@@ -39,8 +43,9 @@
                 You may sort the stocks by the fields selected.
             </div>
         </div>
-        <div class=sort-row>
+        <div class="sort-row step-row">
             <g:render template="/includes/fieldSelect" />
+            <g:render template="/includes/sortOrderSelect" />
             <span class=add-row>+</span>
         </div>
     </div>
@@ -54,10 +59,12 @@
                 Specify and offset and limit for the stocks you want to select.
             </div>
         </div>
-        <label>Limit
+        <label>
+            <span>Limit</span>
             <input type=text id=select-limit>
         </label>
-        <label>Offset
+        <label>
+            <span>Offset</span>
             <input type=text id=select-offset>
         </label>
     </div>

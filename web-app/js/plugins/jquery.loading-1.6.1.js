@@ -124,7 +124,7 @@
     };
 
     // position CSS for page opts //TODO: better support test...
-    var fixed = { position: $.browser.msie ? 'absolute' : 'fixed' };
+    var fixed = { position: ($.browser && $.browser.msie) ? 'absolute' : 'fixed' };
 
     // all that's extensible and configurable...
     $.extend(L, {

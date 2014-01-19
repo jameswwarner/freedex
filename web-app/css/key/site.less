@@ -546,11 +546,11 @@ textarea {
     min-height: 550px;
     margin: 0 auto 80px auto;
     h1 {
-        .Font18;
+        .Font22;
         .FontCaps;
         font-weight: 400;
         text-align: center;
-        border-bottom: 1px solid silver;
+        border-bottom: 1px solid @chartColor;
         padding: @gapLG 0 3px 0;
         margin-bottom: @gapXS;
     }
@@ -1078,16 +1078,75 @@ textarea {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------
+    PAGE VIEW INDEX 
+--------------------------------------------------------------------------------------------------------------------- */
+#page-view-index {
+    h2 {
+        .Font18;
+        width: 75%;
+        margin: 10px auto;
+        img {
+            height: 20px;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+    }
+    .available-indexes {
+        width: 75%;
+        margin: 10px auto 30px auto;
+        li {
+            cursor: pointer;
+            .Font14;
+            color: @chartColor;
+            span {
+                border-bottom: 1px dotted @chartColor;
+                &:hover {
+                    border-bottom: 1px solid @chartColor !important;
+                }
+            }
+        }
+    }
+    table {
+        width: 75%;
+        margin: 10px auto;
+        td {
+            .Font14;
+        }
+        tbody {
+            tr {
+                &:nth-child(even) {
+                    background-color: lighten(lightgray, 10%);
+                }
+            }
+        }
+        thead {
+            td {
+                font-weight: bold;
+            }
+            border-bottom: 1px solid @chartColor;
+        }
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------
     PAGE DEFINE INDEX 
 --------------------------------------------------------------------------------------------------------------------- */
 #page-define-index {
+    .name-area {
+        .Font14;
+        padding-left: 100px;
+        padding-top: 50px;
+        input {
+            margin-left: 25px;
+        }
+    }
     .define-step {
         padding: 30px 10px;
         border-bottom: 1px solid @chartColor;
         .step-num {
             color: @chartColor;
             display: inline-block;
-            .Font28;
+            .Font48;
             width: 25%;
             height: 150px;
             line-height: 150px;
@@ -1113,16 +1172,26 @@ textarea {
                 padding-left: 20px;
                 cursor: pointer;
             }
+            label {
+                span {
+                    width: 50px;
+                }
+                input {
+                    margin-left: 30px;
+                }
+            }
         }
     }
     .button-holder {
         width: 100%;
         #define-index-submit {
             .Button(lighten(@chartColor, 10%));
+            color: white;
             background-image: url(../../images/key/theme1/icon-arrow-right.png);
             width: 120px;
             margin-left: auto;
             margin-right: auto;
+            margin-top: 30px;
             position: relative;
             display: block;
         }
