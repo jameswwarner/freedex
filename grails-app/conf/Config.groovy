@@ -41,6 +41,7 @@ grails.resources.mappers.csspreprocessor.includes = ['**/*.css', '**/*.less']
 
 // What URL patterns should be processed by the resources plugin
 grails.resources.adhoc.patterns = ['/images/*', '/css/*', '/js/*', '/plugins/*']
+grails.web.url.converter = "hyphenated"
 
 // Legacy setting for codec used to encode data with ${}
 grails.views.default.codec = "html"
@@ -91,6 +92,11 @@ grails.hibernate.cache.queries = false
 environments {
     development {
         grails.logging.jul.usebridge = true
+
+        // don't do the fancy resources stuff in development
+        grails.resources.mappers.hashandcache.excludes = ['**/*.*']
+        grails.resources.mappers.bundle.excludes = ['**/*.*']
+        grails.resources.mappers.zip.excludes = ['**/*.*']
     }
     production {
         grails.logging.jul.usebridge = false

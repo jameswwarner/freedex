@@ -29,6 +29,7 @@ modules = {
         resource url: "/js/app.js"
         resource url: "/js/login.js"
         resource url: "/js/gateway.js"
+        resource url: "/js/define-index.js"
         resource url: "/js/user-settings.js"
         resource url: "/js/start.js"
     }

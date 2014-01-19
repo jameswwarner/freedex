@@ -34,6 +34,8 @@ class IndexSortController {
      */
     def create() {
         def indexDefinition = IndexDefinition.get(params.indexDefinition)
+        println "INDEX DEF ID: ${params.indexDefinition}"
+        println "INDEX DEF: ${indexDefinition}"
         def stockField = params.stockField as StockField
         def sortOrder = params.sortOrder ? params.sortOrder as SortOrder : SortOrder.descending
         def indexSort = new IndexSort(indexDefinition: indexDefinition,
