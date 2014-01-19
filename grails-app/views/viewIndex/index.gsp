@@ -21,7 +21,9 @@
 </ul>
 
 <div class=hide-me id=index-holdings>
-    <h2>Index Holdings: <span class=index-name><%-- name put here by JS --%></span></h2>
+    <h2>Index Holdings: <span class=index-name><%-- name put here by JS --%></span>
+        <g:img class="download-icon" uri="/images/key/theme1/icon-download-blue.png" alt="Download" />
+    </h2>
     <table>
         <thead>
             <tr><td>Ticker</td><td>Name</td><td>Weight in index</td></tr>
