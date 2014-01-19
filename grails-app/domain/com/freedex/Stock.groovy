@@ -15,6 +15,9 @@ class Stock {
     double pts
     double priceToBook
 
+    Collection stockQuotes
+    static hasMany = [stockQuotes: StockQuote]
+
     static constraints = {
         ticker unique: true
         sector nullable: true

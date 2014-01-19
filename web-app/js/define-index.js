@@ -35,11 +35,18 @@ app.defineIndex = {
                          stockField: field, sortOrder: sortOrder} });
         });
     },
-    handleWeightCreate: function(data) {
+    handleSnapshotCreate: function(data) {
         if (!data.error) {
-            // TODO: calculate holdings
             // redirect to view page
             window.location = $('#base-uri').val() + 'view-index';
+        }
+    },
+    handleWeightCreate: function(data) {
+        if (!data.error) {
+            // calculate holdings
+            library.action.call('index-snapshot', { action: 'create',
+                params: {indexDefinition: app.defineIndex.indexId},
+                callback: app.defineIndex.handleSnapshotCreate });
         }
     },
     createWeight: function() {
