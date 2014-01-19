@@ -108,12 +108,13 @@ class QuoteImporter:
         if buf:
             self.pushRows(buf)
 ########################################################################
+if __name__ == "__main__":
+    qi = QuoteImporter()
+    for f in sys.argv[1:]:
+        print "importing from", f
+        qi.importFields(f)
+    pass
 
-filename=sys.argv[1]
-print "importing from", filename        
-qi = QuoteImporter()
-qi.importFields(filename)
-                
 
             
                 
