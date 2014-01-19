@@ -19,7 +19,6 @@ where he graduated with university and departmental honors. He was the
 recipient of the Mathematical Sciences Achievement Award, awarded
 annually to the top undergraduate in the Mathematical Sciences
 department.
-Hopefully you have one.
 </p>
 
 <p>
