@@ -9,7 +9,7 @@ class Stock {
     double priceToEarnings
     double earningsPerShare
     double dividendYield
-    int numShares
+    long numShares
     double dps
     double priceEarningsGrowth
     double pts
@@ -17,5 +17,7 @@ class Stock {
 
     static constraints = {
         ticker unique: true
+        sector nullable: true
+        industry nullable: true
     }
 }

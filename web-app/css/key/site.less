@@ -900,6 +900,7 @@ textarea {
                 img {
                     padding-right: 4px;
                     &.intro-logo {
+                        height: 40px;
                         padding-right: 16px;
                     }
                 }
@@ -950,8 +951,8 @@ textarea {
     top: @headerTopBarH;
     left: 0;
     box-sizing: content-box;
-    background-color: @oceanColor;
-    border-bottom: 1px solid darken(@oceanColor, 4%);
+    background-color: lightgray;
+    border-bottom: 1px solid darken(lightgray, 4%);
     margin-bottom: @gapLG;
     height: @subnavBarH;
     width: 100%;
@@ -1065,9 +1066,68 @@ textarea {
     PAGE GATEWAY 
 --------------------------------------------------------------------------------------------------------------------- */
 #page-gateway {
+    .image-header {
+        width: 185px;
+        margin: 0px auto;
+    }
+    .subhead {
+        padding-top: 50px;
+        font-weight: bold;
+        text-align: center;
+    }
 }
 
-
+/* ------------------------------------------------------------------------------------------------------------------
+    PAGE DEFINE INDEX 
+--------------------------------------------------------------------------------------------------------------------- */
+#page-define-index {
+    .define-step {
+        padding: 30px 10px;
+        border-bottom: 1px solid @chartColor;
+        .step-num {
+            color: @chartColor;
+            display: inline-block;
+            .Font28;
+            width: 25%;
+            height: 150px;
+            line-height: 150px;
+            text-align: center;
+        }
+        .step-input {
+            display: inline-block;
+            width: 70%;
+            .Font14;
+            .step-header {
+                padding: 10px;
+                .step-name {
+                    .FontCaps;
+                    .Font18;
+                }
+                .step-description {
+                    font-style: italic;
+                }
+            }
+            .add-row {
+                .Font18;
+                font-weight: bold;
+                padding-left: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+    .button-holder {
+        width: 100%;
+        #define-index-submit {
+            .Button(lighten(@chartColor, 10%));
+            background-image: url(../../images/key/theme1/icon-arrow-right.png);
+            width: 120px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            display: block;
+        }
+    }
+}
 
 
 /* ------------------------------------------------------------------------------------------------------------------

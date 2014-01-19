@@ -18,5 +18,5 @@ $(function() {
     app.login.setup();
     app.facebook.setup();
     app.testMode.setup();
-    $().UItoTop({ easingType: 'easeOutQuart' }); // add a scroll to top button
+    // $().UItoTop({ easingType: 'easeOutQuart' }); // add a scroll to top button
 });
